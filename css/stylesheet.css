@@ -1,0 +1,550 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    /* Cancel out some differences between browser defaults */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+ 
+* {
+    box-sizing: border-box;
+}
+
+/* LAYOUT */
+body {
+    width: 83rem;
+    min-width: 20rem;
+    margin: 0 auto;
+}
+
+main {
+    padding-bottom: 2rem;
+}
+
+.home_intro {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 1em;
+}
+
+header {
+    display: flex;
+    padding: 1em;
+    background-color: rgb(243, 243, 243);
+}
+
+.head-title {
+    text-align: center;
+    align-self: center;
+    flex: 3;
+}
+
+.building_outlook {
+    display: flex;
+    margin: 2em 3em 0 3em;
+}
+
+.building_outlook>p {
+    align-self: center;
+    text-align: left;
+    margin: 1em;
+}
+
+.building_outlook>img {
+    width: 50%;
+    margin: 1em;
+}
+
+.flipster__nav, .flipster__nav__item {
+    padding: 0 0.5em;
+}
+
+.flipster {
+    overflow-y: hidden;
+}
+
+.flipster__nav {
+    margin: 0 0 5em;
+}
+
+.flipster__button {
+    top: 65%;
+    font-size: 1rem;
+}
+
+.section_title {
+    text-align: center;
+    padding: 2.5rem 0 1rem 0;
+}
+
+.event_title {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.local_events{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.event_description {
+    align-self: center;
+}
+
+.intro {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.gmap {
+    margin: 0 auto;
+    height: 30rem;
+    width: 52rem;
+}
+
+#gmap_canvas {
+    /* overflow: hidden; */
+    height: 30rem;
+    width: 52rem;
+}
+
+.application {
+    padding: 2em 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* FORM RELATED */
+form {
+    width: 50%;
+    border: 0.2em double #fff;
+    border-radius: 0.5em;
+    text-align: left;
+    margin: 0 auto;
+    background-color: rgb(12, 88, 110);
+}
+
+form p, label {
+    color: #fff;
+}
+
+.form_title {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+}
+
+.labelled-input {
+    padding: 0.5em 2em;
+    text-align: center;
+}
+
+.labelled-input input {
+    width: 100%;
+}
+
+
+#feedback {
+    font-size: 1rem;
+}
+
+textarea {
+    width: 100%;
+}
+
+.radiobuttons {
+    width: 100%;
+    padding: 0 2em;
+}
+
+input[type=text], input[type=submit], input[type=email]{
+    width: 100%;
+    padding: 0.2rem;
+    margin: 0.2rem 0;
+    font-size: 1rem;
+}
+
+input[type=submit] {
+    background-color: rgb(207, 175, 30);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+} 
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+input[type=radio], input[type=checkbox] {
+    margin: 0.5em;
+    width:1.5em;
+    height:1.5em;
+}
+/* BACKGROUNDS */
+main {
+    background-image: linear-gradient(to right, #cef4f7e3, #fff, #cef4f7e3) ;
+}
+
+/* TYPOGRAPHY */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+p  {
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-family:'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+h2 {
+	font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+}
+
+h3 {
+	font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem; 
+}
+
+.intro{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.section_title {
+    font-weight: bold;
+}
+
+.event_title {
+    font-weight: bold;
+}
+
+.flipster__nav__link {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* COLOUR SCHEME */
+a:hover {
+    color: rgb(210, 183, 109);
+}
+
+header h1 {
+    color: #009CAD;
+}
+
+.section_title {
+    color: rgb(39, 39, 39);
+}
+
+header h3 {
+    color: rgb(103, 197, 138)
+}
+
+.active {
+    text-decoration: underline;
+    color: rgb(0, 106, 124)   
+}
+
+.intro {
+    color: #c54c06ee;
+}
+
+.flipster__nav__link, .flipster__nav__child {
+	color: rgba(177, 179, 170);
+	background-color: #FFF;
+}
+
+.flipster__nav__child .flipster__nav__link {
+    color: rgb(177, 179, 170);
+}
+
+.flipster__nav__item--current>.flipster__nav__link, .flipster__nav__link:focus {
+	color: rgb(0, 106, 124);
+}
+.flipster__nav__link:hover, .flipster__nav__child .flipster__nav__link:hover {
+    color: rgb(230, 186, 29);
+}
+
+footer {
+	background-image: linear-gradient(to right, #747474, #a5a5a5, #6d6e6e) ;
+}
+/* NAVIGATION */
+nav a, footer a {
+    text-decoration: none;
+	color: #fff;
+}
+
+/* .nav-collapse li, .footer_nav li {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 0.5rem 0;
+	color: #fff;
+} */
+
+/* .nav-collapse ul, .footer_nav ul {
+    display: flex;
+    list-style-type: none;
+    text-align: center; 
+    padding: 1rem 0;
+} */
+
+.footer_nav ul {
+    justify-content: space-around;
+}
+
+nav {
+	background-image: linear-gradient(to right, rgb(81, 171, 206), rgb(173, 210, 224), rgb(81, 171, 206));
+}
+/* IMAGES */
+
+img {
+    width: 100%;
+}
+
+#logo {
+    width: 20%;
+    height: 20%;
+    padding: 1.75rem;
+}
+
+.local_events > div {
+    width: 30%;
+    margin: 0 auto;
+}
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 48rem) {
+ /* layout */
+ body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    padding-bottom: 4vw;
+}
+
+header {
+    padding: 2vw;
+}
+
+.building_outlook {
+    flex-direction: column;
+    margin: 4vw 1vw 0 1vw;
+}
+
+.building_outlook>p {
+    width: 90%;
+}
+
+.building_outlook>img {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flipster__nav {
+    margin-top: 1vw;
+}
+
+.flipster__nav, .flipster__nav__item {
+    padding: 0 1vw;
+}
+
+.flipster__button {
+    font-size: 3vw;
+    opacity: .4;
+}
+
+.flipster__nav {
+    margin: 0 0 17vw;
+}
+
+.event_title {
+    margin-bottom: 6vw;
+}
+
+.local_events{
+    padding: 1vw;
+    flex-direction: column;
+}
+
+.intro {
+    padding: 4vw 0;
+}
+
+.gmap {
+    height: 100%;
+    width: 80%;
+}
+
+#gmap_canvas {
+    /* overflow: hidden; */
+    width: 100%;
+}
+
+.application {
+    padding: 4vw 0;
+    width: 80%;
+}
+ /* background */ 
+ /* typography */
+
+p  {
+    font-size: 3vw;
+}
+
+h1 {
+    font-size: 6vw;
+}
+
+h2 {
+    font-size: 5vw;
+}
+
+h3 {
+    font-size: 3vw;
+}
+
+h4 {
+    font-size: 4.5vw; 
+}
+
+.intro{
+    font-size: 4vw;
+    margin: 0 11vw;
+}
+
+.event_title {
+    margin-bottom: 0vw;
+}
+
+.flipster__nav__link {
+    font-size: 3vw;
+}
+ 
+ /* form related */ 
+ form {
+    width: 70%;
+    border: 0.4vw double #fff;
+    border-radius: 2vw;
+}
+
+form p, label {
+    font-size: 4vw;
+}
+.form_title {
+    font-size: 6vw;
+    padding: 2vw;
+}
+
+.labelled-input {
+    padding: 2vw 10vw;
+}
+
+#feedback {
+    font-size: 2vw;
+}
+
+.section_title {
+    font-size: 5vw;
+}
+
+.radiobuttons {
+    width: 100%;
+    text-align: center;
+}
+
+.checkbox_position {
+    text-align: left;
+    padding: 4vw;
+}
+
+input[type=text], input[type=submit], input[type=email]{
+    width: 100%;
+    padding: 0.4vw;
+    margin:0.4vw 0;
+    font-size: 2vw;
+}
+
+input[type=submit] {
+    font-size: 3vw;
+} 
+
+input[type=radio], input[type=checkbox] {
+    margin: 1vw;
+    width: 3vw;
+    height: 3vw;
+}
+ /* navigation */
+.nav-collapse li, .footer_nav li {
+    font-size: 4vw;
+    padding: 1vw 0;
+}
+
+.nav-collapse ul, .footer_nav ul {
+    padding: 2vw 0;
+}
+
+.nav-collapse ul {
+    flex-direction: column;
+}
+
+element.style {
+    position: fixed;
+}
+
+/* a.nav-toggle, .nav-toggle.active {
+    position: fixed;
+    top: 23vw;
+    right: 1vw;
+    color: rgba(176, 228, 133, 0.8);
+    z-index: 1000;
+    font-size: 7vw;
+    text-decoration: none;
+} */
+
+/* .nav-toggle.active{    
+    color: rgba(206, 209, 38, 0.8);
+} */
+
+/* image */
+
+#logo {
+    width: 40%;
+    height: 40%;
+    padding: 4vw;
+}
+
+.local_events > div {
+    width: 90%;
+    padding: 3vw 0;
+}
+
+}
+ @media only screen and (max-width: 23rem) {
+    /* layout */
+    /* background */ 
+    /* typography */ 
+    /* form related */ 
+    /* social media */
+    /* navigation */
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Living</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Otautahi House, Christchurch Student Accommodation, Student Living Area, Ara Student Accommodation, Ara Accommodation, Accommodation Application, Student Service">
+    <meta name="description" content="Otautahi House is reside right next to Ara Institute of Canterbury in Christchurch, New Zealand. It is famous for its diverse culture, convenient location and classic European style student accommodations ">
+    <meta name="author" content="Otautahi House Student Accommodation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/responsive-nav.css">
+    <link rel="stylesheet" href="css/jquery.flipster.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/responsive-nav.js"></script>
+    <script src="js/jquery.flipster.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="img/Ara-Logo.png" alt="Ara Logo">
+        <div class="head-title">
+            <h1>Accommodation</h1>
+            <h3>Christchurch Most Convenient Student Accommodation</h3>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <nav class="nav-collapse">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="living.html" class="active">Living</a></li>
+                <li><a href="local_area.html">Local Area</a></li>
+                <li><a href="application.html">Application</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="accom_introduction">
+                <h3 class="section_title">
+                    Accommodation Intro
+                </h3>
+
+                <div class="building_outlook">
+                    <img src="img/otautahiView1.jpg" alt="Otautahi House View">
+                    <p>
+                        Ōtautahi House offers rooms for 192 students in modern attractive apartments and is
+                        situated right next to our Madras Street Campus.
+                        It is a long established fact that a reader will be distracted by the readable content of a
+                        page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                        normal distribution of letters, as opposed to using 'Content here, content here', making it
+                        look like readable English.
+                    </p>
+                </div>
+                <div class="building_outlook">
+                    <img src="img/theLawn.JPG" alt="Otautahi House Lawn">
+                    <p>
+                        There are a total of 36 secure apartments, each offering single bedrooms, a lounge,
+                        kitchen, showers and toilets.It is a long established fact that a reader will be distracted by
+                        the readable content of a page when looking at its layout. The point of using Lorem Ipsum is
+                        that it has a more-or-less
+                        normal distribution of letters, as opposed to using 'Content here, content here', making it
+                        look like readable English.
+                    </p>
+                </div>
+            </div>
+            <div class="accommodation">
+                <h3 class="section_title">
+                    Accommodation Gallery
+                </h3>
+                <div id="carousel">
+                    <ul class="flip-items">
+                        <li data-flip-title="Building Outlook" data-flip-category="Old Block">
+                            <img src="img/oldBlock.jpg" alt="old block image">
+                        </li>
+                        <li data-flip-title="Flat Room 1" data-flip-category="Old Block">
+                            <img src="img/oldRoom2.jpg" alt="old room1 image">
+                        </li>
+                        <li data-flip-title="Flat Room 2" data-flip-category="Old Block">
+                            <img src="img/bedroom3.jpg" alt="old room2 image">
+                        </li>
+                        <li data-flip-title="The Lounge" data-flip-category="Old Block">
+                            <img src="img/oldKitchen2.jpg" alt="old living image">
+                        </li>
+                        <li data-flip-title="Kitchen" data-flip-category="Old Block">
+                            <img src="img/oldKitchen.jpg" alt="old kitchen image">
+                        </li>
+
+                        <li data-flip-title="Building Outlook" data-flip-category="New Block">
+                            <img src="img/newBlock.JPG" alt="new block image">
+                        </li>
+                        <li data-flip-title="Flat Room 1" data-flip-category="New Block">
+                            <img src="img/bedroom6.jpg" alt="room1 image">
+                        </li>
+                        <li data-flip-title="Flat Room 2" data-flip-category="New Block">
+                            <img src="img/bedroom5.jpg" alt="room3 image">
+                        </li>
+                        <li data-flip-title="The Lounge" data-flip-category="New Block">
+                            <img src="img/newLiving.jpg" alt="new living image">
+                        </li>
+                        <li data-flip-title="Kitchen" data-flip-category="New Block">
+                            <img src="img/kitchen1.jpg" alt="new kitchen image">
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer_nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="living.html" class="active">Living</a></li>
+                    <li><a href="local_area.html">Local Area</a></li>
+                    <li><a href="application.html">Application</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        var navigation = responsiveNav(".nav-collapse", {
+            transition: 1000,
+            label: "&#9776;",
+            insert: "before"
+        });
+
+        var carousel = $("#carousel").flipster({
+            style: 'carousel',
+            spacing: -0.5,
+            nav: true,
+            buttons: true,
+        });
+
+        // $(function () {
+        //     $("img").on('click', function () {
+        //         if ($(this).width() >= 800) {
+        //             $(this).width(400);
+        //         } else {
+        //             $(this).width(800);
+        //         }
+        //     });
+        // });
+
+    </script>
+</body>
+
+</html>
